@@ -24,7 +24,7 @@ return function (App $app) {
         "password" => "",
         "database" => "mystage",
         "basePath" => "/api/v1",
-        "middlewares" => "cors",
+        "middlewares" => "cors,dbAuth",
         /*"authorization.tableHandler" => function($operation, $tableName) {
           return $tableName != "users";
         },*/
