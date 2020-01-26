@@ -251,6 +251,10 @@ class Api {
             $this->dataResponse($sql, $params, $data);
         } else if($action === "myuser") {
             $this->dataResponse(null, null, $this->user);
+        } else if($action === "files") {
+            $fileName = $parts[1];
+
+            readfile("files/" + $fileName);
         }
     }
 
